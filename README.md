@@ -1,12 +1,20 @@
 # ✈️ Fleet Predictive Maintenance & Inventory Optimization
 
-An AI-driven predictive maintenance system that identifies high-risk aircraft engines before failure and dynamically optimizes spare-component inventory based on fleet degradation risk.
+> An AI-driven predictive maintenance and dynamic spare inventory optimization platform for aircraft fleets.
+
+## 🚀 Live Demo
+
+👉 **[Open the Live Dashboard](https://fleet-predictive-maintenance.streamlit.app/)**
+
+---
 
 ## 🎯 Project Overview
 
 Unplanned aircraft engine failures can result in expensive Aircraft-on-Ground (AOG) events, emergency maintenance, operational delays, and inefficient spare-parts inventory.
 
-This project combines:
+This project develops an end-to-end AI-driven system that predicts high-risk aircraft engines before failure and converts those predictions into maintenance and inventory decisions.
+
+The system combines:
 
 - Machine Learning-based engine failure prediction
 - Engine degradation and lifecycle analysis
@@ -15,7 +23,7 @@ This project combines:
 - Fleet-level risk monitoring
 - Interactive Streamlit dashboard
 
-The system uses NASA's C-MAPSS turbofan engine degradation dataset as a benchmark for predictive maintenance modeling.
+The system uses NASA's C-MAPSS turbofan engine degradation dataset as a predictive-maintenance benchmark.
 
 ---
 
