@@ -1,61 +1,57 @@
-# ✈️ Fleet Predictive Maintenance & Inventory Optimization
+# ✈️ Fleetora
 
-> An AI-driven predictive maintenance and dynamic spare inventory optimization platform for aircraft fleets.
+> **AI-Powered Fleet Predictive Maintenance & Inventory Optimization Platform**
+
+Fleetora is an end-to-end AI-driven decision-support platform designed to predict aircraft engine failure risk, support proactive maintenance decisions, estimate business impact, and dynamically optimize spare-parts inventory.
+
+---
 
 ## 🚀 Live Demo
 
-👉 **[Open the Live Dashboard](https://fleet-predictive-maintenance.streamlit.app/)**
+👉 **[Open Fleetora Live Dashboard](https://fleet-predictive-maintenance.streamlit.app/)**
 
 ---
 
-## 🎯 Project Overview
+## 🎯 Problem Statement
 
-Unplanned aircraft engine failures can result in expensive Aircraft-on-Ground (AOG) events, emergency maintenance, operational delays, and inefficient spare-parts inventory.
+Unplanned aircraft engine failures can lead to:
 
-This project develops an end-to-end AI-driven system that predicts high-risk aircraft engines before failure and converts those predictions into maintenance and inventory decisions.
+- Expensive Aircraft-on-Ground (AOG) events
+- Emergency maintenance
+- Flight delays and operational disruption
+- High reactive maintenance costs
+- Poor spare-parts planning
+- Excess inventory or unexpected stockouts
 
-The system combines:
+Traditional maintenance approaches often react to failures after they occur or rely on fixed maintenance schedules.
 
-- Machine Learning-based engine failure prediction
-- Engine degradation and lifecycle analysis
-- Cost-sensitive maintenance decision making
-- Dynamic spare inventory optimization
-- Fleet-level risk monitoring
-- Interactive Streamlit dashboard
-
-The system uses NASA's C-MAPSS turbofan engine degradation dataset as a predictive-maintenance benchmark.
+Fleetora tackles this problem by combining **predictive analytics, business decision-making, and inventory optimization** into one platform.
 
 ---
 
-## 🏗️ System Architecture
+## 💡 What Fleetora Does
+
+Fleetora follows an end-to-end pipeline:
 
 ```text
-NASA C-MAPSS Dataset
+Engine Sensor Data
         ↓
-Data Loading & RUL Calculation
+Time-Series Feature Engineering
         ↓
-Feature Engineering
- ├── Rolling Mean
- ├── Rolling Standard Deviation
- ├── Sensor Differences
- └── Degradation Slopes
-        ↓
-LightGBM Failure Classifier
+LightGBM Failure Prediction
         ↓
 Failure Probability
         ↓
-Maintenance Decision Layer
- ├── Preventive Maintenance
- └── AOG Risk
+Decision Threshold
         ↓
-Fleet-Level Risk Aggregation
+Preventive Maintenance Decision
         ↓
-Dynamic Inventory Optimizer
- ├── Expected Spare Demand
- ├── Demand Uncertainty
- ├── Safety Stock
- └── Target Inventory
+Business Cost Analysis
         ↓
-Streamlit Dashboard
+Fleet Risk Aggregation
         ↓
-Operational & Business KPIs
+Probabilistic Spare Demand Estimation
+        ↓
+Safety Stock & Target Inventory
+        ↓
+Interactive Fleet Dashboard
